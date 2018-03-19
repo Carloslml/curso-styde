@@ -26,6 +26,6 @@ if ($nick) {
 return "BIENVENIDO {$name}, tu apodo es {$nick}";
 
 }else{
-	return "<h3 style='text-align:center'>Sin apodos xd! </h3>";
+	return "<h3 style='text-align:center;font-family:cursive;'>Sin apodos xd! </h3>";
 }
 });
