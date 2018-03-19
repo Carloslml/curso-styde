@@ -1,13 +1,13 @@
 <?php
 
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/',function(){
-	return "Home";
+Route::get('/', function () {
+    return view('welcome');
 });
+
+// Route::get('/',function(){
+// 	return "Home";
+// });
  
 Route::get('/Usuarios',function(){
 	return "Usuarios";
