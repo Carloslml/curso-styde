@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class UserModuleTest extends TestCase
 {
     /** @test  */
-    function it_loads_the_users_list_page()
+    function it_shows_the_users_list()
     {
         $this->get('/usuarios')
         ->assertStatus(200)
@@ -17,6 +17,14 @@ class UserModuleTest extends TestCase
         ->assertSee('Listado de usuarios');
     }
 
+    /** @test  */
+    function it_show_a_default_message_if_the_users_list_id_empy()
+    {
+        $this->get('/usuarios?empty')
+        ->assertStatus(200)
+        ->assertSee('No hay usuarios registrados');
+
+    }
 
     /** @test  */
 
